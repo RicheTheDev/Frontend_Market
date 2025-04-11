@@ -24,8 +24,8 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
-            <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-all">Connexion</button>
-            <button className="ml-4 bg-white hover:bg-gray-50 text-indigo-600 px-4 py-2 rounded-md text-sm font-medium border border-indigo-600 transition-all">Inscription</button>
+          <button onClick={() => window.dispatchEvent(new CustomEvent('open-login'))}className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-all">Connexion</button>
+          <button onClick={() => window.dispatchEvent(new CustomEvent('open-register'))} className="ml-4 bg-white hover:bg-gray-50 text-indigo-600 px-4 py-2 rounded-md text-sm font-medium border border-indigo-600 transition-all">Inscription</button>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
             <button onClick={toggleMobileMenu} type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -44,8 +44,8 @@ const Navbar = () => {
             <a href="#" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Marchands</a>
             <a href="#" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Catégories</a>
             <div className="mt-4 p-2">
-              <button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-all">Connexion</button>
-              <button className="w-full mt-2 bg-white hover:bg-gray-50 text-indigo-600 px-4 py-2 rounded-md text-sm font-medium border border-indigo-600 transition-all">Inscription</button>
+            <button onClick={() => window.dispatchEvent(new CustomEvent('open-login'))}className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-all">Connexion</button>
+              <button onClick={() => window.dispatchEvent(new CustomEvent('open-register'))} className="ml-4 bg-white hover:bg-gray-50 text-indigo-600 px-4 py-2 rounded-md text-sm font-medium border border-indigo-600 transition-all">Inscription</button>
             </div>
           </div>
         </div>
